@@ -1,0 +1,79 @@
+.navbar{
+    background-color: #13b6b4;
+    padding: 10px 15px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    overflow: hidden;
+}
+.placeicon{
+    font-family: fontawesome;
+}
+.menu-icon{
+    display: none;
+}
+
+.navbar img{
+    width: 30px;
+    vertical-align: middle;
+}
+.brand-name{
+    display: inline-block;
+    padding: 0px 10px;
+}
+.navbar ul{
+    list-style: none;
+    display: inline-block;
+    float: right;
+    margin-right: 50px;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 5px;
+    font-weight: bolder;
+}
+.navbar ul li a,.logout-btn{
+    border-radius: 8px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+}
+.logout-btn{
+    font-weight: bold;
+    border: none;
+    color: black;
+    background-color: #13b6b4;
+}
+.navbar ul li a:hover,.logout-btn:hover{
+    background-color: white;
+    color: #13b6b4;
+}
+.navbar ul li .active{
+    background-color: white;
+    color: #13b6b4;
+}
+
+@media screen and (max-width: 630px) {
+    .brand-name{
+        font-size: 13px;
+    }
+    .navbar ul{
+        margin-top: 10px;
+        display: block;
+        float: none;
+        margin-right: 0px;
+    }
+    .menu-icon{
+        display: inline-block;
+        float: right;
+    }
+    .navbar ul li{
+        display: none;
+        margin: 0px auto;
+        padding: 5px;
+        text-align: center;
+    }
+}
